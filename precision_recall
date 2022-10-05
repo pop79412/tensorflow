@@ -1,0 +1,30 @@
+precision=Tp/TP+FP   (所有框理正確框多少)
+Recall=TP/TP+FN  (所有人多少被框)
+
+偽陽性率：FPR (False Positive Rate)
+FPR表示成 1-特異度 而特異度(specificity)意指正確判斷出負樣本，故特異度越高、FPR越低，模型越能夠正確判斷負樣本、表現越好
+
+Specificity = True Negatives / (True Negatives + False Positives)
+FPR = 1 - Specificity
+    = False Positives / (False Positives + True Negatives)
+   
+真陽性率：TPR (True Positive Rate)
+TPR又稱為敏感度(Sensitivity)，它也是我們熟知的召回率(Recall)，也就是正確判斷出正樣本，故TPR越高則模型越能夠正確判斷正樣本、表現越好
+
+TPR = Sensitivity
+    = True Positives / (True Positives + False Negatives)
+    
+    曲線下面積：AUC(Area under curve)
+When using normalized units, the area under the curve (often referred to as simply the AUC) is equal to the probability that a classifier will rank a randomly chosen positive instance higher than a randomly chosen negative one (assuming ‘positive’ ranks higher than ‘negative’) — from wikipedia
+
+AUC(曲線下面積)，所代表的意義為隨機抽取一個正樣本，分類器會正確判斷為正樣本的機率高於判斷為負樣本的機率，所以 AUC 越高則分類器正確率會越高。
+
+
+
+
+
+
+
+
+參考
+https://ithelp.ithome.com.tw/articles/10229049
